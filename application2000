@@ -1,0 +1,12 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1000/eureka/ #注册中心地址
+  instance:
+    prefer-ip-address: true #使用ip进行注册
+    instance-id: user-server-2000  #也是定义名字
+server:
+  port: 2000
+spring:
+  application:
+    name: user-server #配置一个名字，不然就是你电脑的名字
